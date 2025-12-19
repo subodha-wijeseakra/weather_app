@@ -79,4 +79,4 @@ This project is released under the MIT License.
 
 ---
 
-If you want, I can generate a short or extended version as well.
+
