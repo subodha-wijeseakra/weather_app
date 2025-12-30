@@ -1,82 +1,95 @@
-# Weather App — Next.js + Open-Meteo API
+# 🌦️ Weather App
 
-This is a simple and fast Weather Application built using Next.js. The app uses the Open-Meteo API to fetch real-time weather information for any location. Users can search for a city and view details such as temperature, humidity, wind speed, and general weather conditions.
+> A modern, beautiful, and responsive weather application built with Next.js 15, Tailwind CSS, and Open-Meteo API.
 
----
+![Next.js](https://img.shields.io/badge/Next.js-15-black?style=for-the-badge&logo=next.js)
+![React](https://img.shields.io/badge/React-19-blue?style=for-the-badge&logo=react)
+![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-4.0-38bdf8?style=for-the-badge&logo=tailwind-css)
+![TypeScript](https://img.shields.io/badge/TypeScript-5.0-3178c6?style=for-the-badge&logo=typescript)
 
-## Features
+## 🚀 Overview
 
-* Search weather by city or location
-* Real-time temperature and weather condition display
-* Shows humidity, wind speed, and other basic metrics
-* Built using Next.js with fast rendering
-* Responsive design suitable for both mobile and desktop
-* Uses Open-Meteo Weather API (no API key required)
+This Weather App provides real-time weather updates, detailed forecasts, and interactive maps for any location worldwide. Built with performance and user experience in mind, it features a sleek UI with dark/light mode support, automatic geolocation, and fast data fetching.
 
----
+## ✨ Features
 
-## Tech Stack
+-   **📍 Automatic Geolocation**: key feature that automatically detects your location to show local weather instantly.
+-   **🌍 Global Search**: Search for any city worldwide with reverse geocoding support.
+-   **🌡️ Real-time Data**: Current temperature, humidity, wind speed, pressure, and more.
+-   **📅 7-Day Forecast**: Weekly weather trends to help you plan ahead.
+-   **🗺️ Interactive Map**: specific Visual weather map using Leaflet to explore precipitation and clouds.
+-   **🌗 Dark/Light Mode**: Fully themable UI that adapts to your system preference or manual toggle.
+-   **⚡ Fast & Responsive**: Optimized for speed with Next.js server/client components and responsive for all devices.
 
-* Next.js
-* React
-* Tailwind CSS (if used)
-* Open-Meteo Weather API
-* Node.js
+## 🛠️ Tech Stack
 
----
+-   **Framework**: [Next.js 15](https://nextjs.org/) (App Router)
+-   **Language**: [TypeScript](https://www.typescriptlang.org/)
+-   **Styling**: [Tailwind CSS v4](https://tailwindcss.com/)
+-   **Icons**: [Lucide React](https://lucide.dev/)
+-   **Maps**: [Leaflet](https://leafletjs.com/) & [React-Leaflet](https://react-leaflet.js.org/)
+-   **Data Provider**: [Open-Meteo API](https://open-meteo.com/) (Weather) & [BigDataCloud](https://www.bigdatacloud.com/) (Geocoding)
 
-## Installation
+## 📦 Installation
 
-Make sure you have Node.js installed. Clone the project and install the dependencies:
+Getting started is easy. Follow these steps to run the project locally.
+
+1.  **Clone the repository**
+    ```bash
+    git clone https://github.com/your-username/weather-app.git
+    cd weather-app
+    ```
+
+2.  **Install dependencies**
+    ```bash
+    npm install
+    # or
+    yarn install
+    # or
+    pnpm install
+    ```
+
+3.  **Run the development server**
+    ```bash
+    npm run dev
+    ```
+
+4.  **Open in your browser**
+    Navigate to [http://localhost:3000](http://localhost:3000) to see the app in action.
+
+## 📂 Project Structure
 
 ```bash
-git clone https://github.com/your-username/your-repo-name.git
-cd your-repo-name
-
-npm install
+├── 📁 src
+│   ├── 📁 app          # Next.js App Router pages
+│   ├── 📁 components   # Reusable UI components (WeatherMap, Forecast, etc.)
+│   ├── 📁 lib          # Utility functions and API calls
+│   └── 📁 styles       # Global styles and Tailwind config
+├── 📄 public           # Static assets (images, icons)
+├── 📄 tailwind.config.ts # Tailwind CSS configuration
+└── 📄 package.json     # Project dependencies and scripts
 ```
+
+## 🔧 Configuration
+
+The app is designed to work out-of-the-box without complex configuration.
+-   **API**: No API keys are required for Open-Meteo.
+-   **Tailwind**: Configured in `tailwind.config.ts` and `src/app/globals.css`.
+
+## 🤝 Contributing
+
+Contributions are welcome! If you have ideas for improvements or find any bugs, feel free to open an issue or submit a pull request.
+
+1.  Fork the repository
+2.  Create your feature branch (`git checkout -b feature/AmazingFeature`)
+3.  Commit your changes (`git commit -m 'Add some AmazingFeature'`)
+4.  Push to the branch (`git push origin feature/AmazingFeature`)
+5.  Open a Pull Request
+
+## 📄 License
+
+This project is open-source and available under the [MIT License](LICENSE).
 
 ---
 
-## Running the App
-
-```bash
-npm run dev
-```
-
-Then open the app at:
-
-```
-http://localhost:3000
-```
-
----
-
-## Notes
-
-This project does not include the `node_modules` folder because it increases the repository size significantly. Dependencies can be installed anytime using `npm install`.
-
-Recommended `.gitignore` entries:
-
-```
-node_modules/
-.next/
-.env
-```
-
----
-
-## API Used
-
-The application uses the Open-Meteo API to fetch weather data.
-More details can be found at: [https://open-meteo.com/](https://open-meteo.com/)
-
----
-
-## License
-
-This project is released under the MIT License.
-
----
-
-
+Made with ❤️ by Subodha Wijesekara
